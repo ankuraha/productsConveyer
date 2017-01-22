@@ -13,6 +13,7 @@ public class User extends ModelObject {
     private String password;
     private Set<Contact> contacts;
     private Set<Role> roles;
+    private Office office;
 
     public User() {
         super();
@@ -93,5 +94,13 @@ public class User extends ModelObject {
 
     public boolean isHasRole(Role role){
         return roles.contains(role);
+    }
+
+    public Office getOffice() {
+        return office;
+    }
+
+    public void setOffice(Office office) {
+        this.office = office;
     }
 }

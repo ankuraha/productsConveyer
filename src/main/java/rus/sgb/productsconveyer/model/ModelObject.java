@@ -18,7 +18,7 @@ public class ModelObject implements Serializable {
     protected int status;
     protected User creator;
     protected Calendar timeCreate;
-    protected int hashValue;
+    protected int hashValue; //have to reformat variable and methods
 
     public ModelObject() {
         this.status = 0;
